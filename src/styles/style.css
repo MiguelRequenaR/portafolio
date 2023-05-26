@@ -18,7 +18,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background-color: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,10 +201,63 @@ body{
     width: 450px;
     height: 450px;
     opacity: 80%;
+    animation: perfil 6s ease-out infinite;
 }
 
 .photo-perfil{
     width: 500px;
+}
+
+.weeks {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-around;
+    background-color: white;
+    color: #081b29;
+}
+
+.weeks-content{
+    max-width: 600px;
+}
+
+.weeks-content h1{
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.weeks2 {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-around;
+    background-color: #081b29;
+    color: white;
+}
+
+.weeks2-content{
+    max-width: 600px;
+}
+
+.weeks2-content h1{
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+
+
+@keyframes perfil {
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(-60px);
+    }100%{
+        transform: translateY(0px);
+    }
 }
 
 /*KEYFRAMES ANIMATION*/
@@ -212,4 +265,26 @@ body{
     100%{
         width: 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 2%; /* Ajusta el espacio interno en pantallas más pequeñas */
+  }
+
+  .photo {
+    display: none; /* Redimensiona la imagen en pantallas más pequeñas */
+  }
+
+  .photo-perfil {
+    width: 100%; /* Ajusta el ancho de la imagen en pantallas más pequeñas */
+  }
+
+  .navbar {
+    flex-direction: column; /* Cambia la dirección del menú en pantallas más pequeñas */
+  }
+
+  .navbar a {
+    margin: 10px 0; /* Ajusta el espacio entre los elementos del menú en pantallas más pequeñas */
+  }
 }
