@@ -1,6 +1,7 @@
 import './styles/style.css'
-import 'boxicons'
-import cabra from './../public/images/cabrita.png'
+import perfil from './../public/images/perfil1.jpg';
+import javascript from './../public/images/javascript.jpg';
+
 
 function App() {
   
@@ -8,24 +9,25 @@ function App() {
     <>
       
     <header className="header">
-        <a href="#" className="logo">Miguel</a>
+        <a href="#" className="logo">Portafolio</a>
 
         <nav className="navbar">
-            <a href="#" className="active">Inicio</a>
-            <a href="#">Semanas</a>
-            <a href="#">Sobre el curso</a>
-            <a href="#">Portafolio</a>
-            <a href="#"></a>
+            <a href="#" className="active">Bienvenida e Introducción</a>
+            <a href="#">Tabla de contenido</a>
+            <a href="#">Información sobre mí</a>
+            
         </nav>
     </header>
 
     <section className="home">
         <div className="home-content">
             <h1>Hola, Bienvenidos</h1>
-            <h3>Cybersecurity</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam alias accusamus quis 
-            harum veritatis fugit perspiciatis. Quaerat, vero inventore! Dolor aut dolorum itaque fugit
-            quam facilis explicabo impedit molestias accusantium?</p>
+            <h3>Portafolio de Desarrollo de Aplicaciones Web</h3>
+            <p>Hola!!! Soy Miguel, estudiante de la UNCP, en la carrera profesional 
+                de Ingeniería de Sistemas, soy una persona aficionada por la tecnología,
+                y por la ciberseguridad.
+                Este portafolio esta destinado principalmente, al curso de Desarrollo de
+                Aplicaciones Web.</p>
 
             <div className="btn-box">
                 <a href="#">Hire Me</a>
@@ -34,105 +36,177 @@ function App() {
 
         </div>
         <div className='photo'>
-          <img className='photo-perfil' src={cabra} alt="" />
+          <img className='photo-perfil' src={perfil} alt="" />
         </div>
     </section>
 
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 1</h1>
+    <section id='weeks' className='weeks'>
+        <div className='content-weeks'>
+            <h2>Contenido de clases</h2>
+            <div className='fila'>
+                <div className='col izquierda'>
+                    <h3>Semana 1</h3>
+                    <div className='item izq'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectori'>
+                            <div className='circuloi'></div>
+                        </div>
+                    </div>
+                    
+                    <div className='item izq'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectori'>
+                            <div className='circuloi'></div>
+                        </div>
+                    </div>
+
+                    <div className='item izq'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectori'>
+                            <div className='circuloi'></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className='col derecha'>
+                    <h3>Semana 2</h3>
+                    <div className='item der'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectord'>
+                            <div className='circulod'></div>
+                        </div>
+                    </div>
+                    
+                    <div className='item der'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectord'>
+                            <div className='circulod'></div>
+                        </div>
+                    </div>
+
+                    <div className='item der'>
+                        <h4>¿Qué es Javascript</h4>
+                        <span className='casa'>Javascript es un lenguaje de programación</span>
+                        <span className='fecha'>2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Facere sed, obcaecati sit iusto in, earum voluptatibus 
+                            ducimus, adipisci enim deleniti sint neque laboriosam? 
+                            Voluptates hic modi cumque autem accusantium magni?</p>
+                        <div className='conectord'>
+                            <div className='circulod'></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 2</h1>
+    <section id="images" className='images'>
+        <div className='content-images'>
+            <h2>Galeria de imagenes</h2>
+            <div className='galeria'>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+                <div className='proyecto'>
+                    <img src={javascript} alt="" />
+                    <div className='overlay'>
+                        <h3>Imagen número 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quaerat suscipit nisi sit! Fugiat 
+                            exercitationem omnis accusamus aut autem! Tempora ex 
+                            fugiat doloremque illo temporibus ducimus repellat 
+                            nostrum delectus voluptate?</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 3</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 4</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 5</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 6</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 7</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 8</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 9</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 10</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 11</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 12</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 13</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 14</h1>
-        </div>
-    </section>
-
-    <section className='weeks'>
-        <div className='weeks-content'>
-            <h1>Semana 15</h1>
-        </div>
-    </section>
-
-    <section className='weeks2'>
-        <div className='weeks2-content'>
-            <h1>Semana 16</h1>
-        </div>
-    </section>
     </>
   )
 }

@@ -43,7 +43,12 @@ body{
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
+}
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a{ 
@@ -85,7 +90,7 @@ body{
 }
 
 .home-content p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px 0 40px;
 }
 
@@ -201,63 +206,196 @@ body{
     width: 450px;
     height: 450px;
     opacity: 80%;
-    animation: perfil 6s ease-out infinite;
 }
 
 .photo-perfil{
     width: 500px;
 }
 
-.weeks {
-    height: 30vh;
+.weeks{
+    background-color: #081b29;
+    color: white;
+    padding: 50px 20px;
+}
+
+.weeks .content-weeks{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.weeks h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.weeks .fila{
     display: flex;
-    align-items: center;
-    padding: 0 10%;
-    justify-content: space-around;
-    background-color: white;
+    justify-content: space-between;
+}
+
+.weeks .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.weeks .fila .col h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.weeks .fila .izquierda{
+    border-right: 2px solid #00abf0;
+}
+
+.weeks .fila .derecha{
+    border-left: 2px solid #00abf0;
+}
+
+.weeks .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.weeks .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
     color: #081b29;
 }
 
-.weeks-content{
-    max-width: 600px;
+.weeks .fila .item .casa{
+    color: #00abf0;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
 }
 
-.weeks-content h1{
-    font-size: 56px;
-    font-weight: 900;
-    line-height: 1.2;
+.weeks .fila .item .fecha{
+    display: block;
+    color: #00abf0;
+    margin-bottom: 10px;
 }
 
-.weeks2 {
-    height: 30vh;
+.weeks .fila .item p{
+    line-height: 24px;
+    color: #081b29;
+}
+
+.weeks .fila .izq{
+    border-right: 2px solid #00abf0;
+    margin-right: 20px;
+}
+
+.weeks .fila .der{
+    border-left: 2px solid #00abf0;
+    margin-left: 20px;
+}
+
+.weeks .fila .item .conectori{
+    height: 2px;
+    background-color: #00abf0;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.weeks .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #00abf0;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.weeks .fila .item .conectord{
+    height: 2px;
+    background-color: #00abf0;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.weeks .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #00abf0;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.images{
+    background-color: whitesmoke;
+    color: #081b29;
+    padding: 50px 20px;
+}
+.images .content-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.images h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.images .galeria{
     display: flex;
-    align-items: center;
-    padding: 0 10%;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.images .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
     background-color: #081b29;
-    color: white;
 }
 
-.weeks2-content{
-    max-width: 600px;
+.images .galeria .proyecto img{
+    width: 100%;
+    display: block;
 }
 
-.weeks2-content h1{
-    font-size: 56px;
-    font-weight: 900;
-    line-height: 1.2;
+.images .galeria .proyecto .overlay{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+.images .galeria .proyecto .overlay h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #00abf0;
 }
 
-
-
-@keyframes perfil {
-    0%{
-        transform: translateY(0px);
-    }50%{
-        transform: translateY(-60px);
-    }100%{
-        transform: translateY(0px);
-    }
+.images .galeria .proyecto .overlay p{
+    text-align: justify;
+    padding: 20px;
+    color: whitesmoke;
 }
 
 /*KEYFRAMES ANIMATION*/
@@ -267,24 +405,27 @@ body{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .header {
-    padding: 20px 2%; /* Ajusta el espacio interno en pantallas más pequeñas */
+    padding: 20px 2%; 
   }
 
   .photo {
-    display: none; /* Redimensiona la imagen en pantallas más pequeñas */
+    display: none; 
   }
 
   .photo-perfil {
-    width: 100%; /* Ajusta el ancho de la imagen en pantallas más pequeñas */
+    width: 100%; 
   }
 
   .navbar {
-    flex-direction: column; /* Cambia la dirección del menú en pantallas más pequeñas */
+    flex-direction: column; 
+    align-items: flex-start;
   }
 
   .navbar a {
-    margin: 10px 0; /* Ajusta el espacio entre los elementos del menú en pantallas más pequeñas */
+    margin-left: 0;  
+    margin-top: 10px;
+    display: block;
   }
 }
