@@ -290,11 +290,13 @@ body{
 .weeks .fila .izq{
     border-right: 2px solid #00abf0;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 .weeks .fila .der{
     border-left: 2px solid #00abf0;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 .weeks .fila .item .conectori{
@@ -362,6 +364,7 @@ body{
     justify-content: space-around;
 }
 
+
 .images .galeria .proyecto{
     position: relative;
     max-width: 340px;
@@ -369,11 +372,16 @@ body{
     margin: 10px;
     cursor: pointer;
     background-color: #081b29;
+    border-radius: 10px;
+    box-shadow:  0 0px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
 }
 
 .images .galeria .proyecto img{
     width: 100%;
+    padding: 20px;
     display: block;
+    border-radius: 30px;
 }
 
 .images .galeria .proyecto .overlay{
@@ -394,9 +402,66 @@ body{
 }
 
 .images .galeria .proyecto .overlay p{
-    text-align: justify;
-    padding: 20px;
+    text-align: left;
+    padding: 30px;
+    font-size: 15px;
     color: whitesmoke;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto ; 
+}
+.gallery h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.gallery .gallery-content .card{
+    position: relative;
+    left: 0px;
+    width: 210px;
+    height: 260px;
+    padding: 8px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+
+.gallery .gallery-content .card:nth-child(1){
+    background-color: #b881ff;
+}
+
+.gallery .gallery-content .card:nth-child(2){
+    background-color: #ff9950;
+}
+
+.gallery .gallery-content .card:nth-child(3){
+    background-color: #aaec8a;
+}
+
+.gallery .gallery-content .card:nth-child(4){
+    background-color: #ed6a5e;
+}
+
+.gallery .gallery-content .card:hover{
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gallery .gallery-content .card:hover ~ .card{
+    left: 55px;
 }
 
 /*KEYFRAMES ANIMATION*/

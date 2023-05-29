@@ -137,72 +137,78 @@ function App() {
         <div className='content-images'>
             <h2>Galeria de imagenes</h2>
             <div className='galeria'>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
-                <div className='proyecto'>
+                <div className='proyecto hover:scale-105 duration-200 ease-in-out'>
                     <img src={javascript} alt="" />
                     <div className='overlay'>
                         <h3>Imagen número 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Repellat quaerat suscipit nisi sit! Fugiat 
-                            exercitationem omnis accusamus aut autem! Tempora ex 
-                            fugiat doloremque illo temporibus ducimus repellat 
-                            nostrum delectus voluptate?</p>
+                            exercitationem.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section className='gallery'>
+        <h2>Tabla de contenido</h2>
+        <div className='gallery-content'>
+            <div className='card'>
+                Contenido 1
+            </div>
+            <div className='card'>
+                Contenido 2
+            </div>
+            <div className='card'>
+                Contenido 3
+            </div>
+            <div className='card'>
+                Contenido 4
             </div>
         </div>
     </section>
