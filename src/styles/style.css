@@ -69,7 +69,8 @@ body{
     height: 90vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    margin-top: 50px;
+    padding: 0px 50px;
     justify-content: space-around;
 }
 
@@ -405,17 +406,23 @@ body{
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
+.home{
+    margin-top: 150px;
+}
+
   .header {
     padding: 20px 2%; 
   }
 
   .photo {
-    display: none; 
+    display: none;
   }
 
   .photo-perfil {
     width: 100%; 
+    display: none;
+
   }
 
   .navbar {

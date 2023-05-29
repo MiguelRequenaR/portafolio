@@ -13,7 +13,7 @@ function App() {
 
         <nav className="navbar">
             <a href="#" className="active">Bienvenida e Introducción</a>
-            <a href="#">Tabla de contenido</a>
+            <a href="#weeks">Tabla de contenido</a>
             <a href="#">Información sobre mí</a>
             
         </nav>
