@@ -1,9 +1,9 @@
 import './styles/style.css'
-import perfil from './../public/images/perfil1.jpg';
-import javascript from './../public/images/javascript.jpg';
-import html from './../public/images/html.png';
-import css from './../public/images/css.png';
-import trabajo1 from './../public/images/trabajo1.png';
+import perfil from './assets/images/perfil1.jpg';
+import javascript from './assets/images/javascript.jpg';
+import html from './assets/images/html.png';
+import css from './assets/images/css.png';
+import trabajo1 from './assets/images/trabajo1.png';
 
 
 function App() {
@@ -229,7 +229,7 @@ function App() {
     </section>
 
     <section className='gallery'>
-        <h2>Tabla de contenido</h2>
+        <h2>Temario de contenido</h2>
         <div className='gallery-content'>
             <div className='card'>
                 <h1>Semana 1</h1> <br />
