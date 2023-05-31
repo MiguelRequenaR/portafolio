@@ -43,6 +43,13 @@ function App() {
         </div>
     </section>
 
+    <section className='headers'>
+        <h2>Tabla de contenido</h2>
+        <div className='header-content'>
+            <button className='btn'>Semana 1</button>
+        </div>
+    </section>
+
     <section id='weeks' className='weeks'>
         <div className='content-weeks'>
             <h2>Contenido de clases</h2>
@@ -154,7 +161,7 @@ function App() {
             </div>
         </div>
     </section>
-
+    
     <section className='work'>
         <h2>Trabajo de laboratorio</h2>
         <h3>Portafolio desarrollado en Figma.</h3>
